@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="zh-tw" class="no-js">
+	<head>
+		<meta charset="utf-8">
+		<title>Digital+</title>
+        <!-- about SEO -->
+        <meta name="description" content="Digital+ 數碼數位 行動自媒體 iApp-Media from Taipei App-Version" />
+        <meta name="keywords" content="DigitalPlus,App,Digital+,數碼數位,iApp,iApp-Media,iMag,Web App,O2O,SoLoMo,SMO"/>
+       
+    <!-- for apple (PS:iphone5 去除width=device-width)
+         1.viewport符合device真正寬度,scale畫面倍率,scalable是否可縮放
+         2-3.將Web Page儲存為home screen icon時的圖示
+         4.設定載入頁面時 loading 圖片
+         5.隱藏底部 iPhone button bar，看起來更像 iPhone App
+         6.更改 status bar 樣式    
+     -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="apple-touch-icon-precomposed" href="img/icon.png"/>  
+    <link rel="apple-touch-icon" href="img/114.png"/> 
+    <link rel="apple-touch-startup-image" href="startup-iphone-portrait.png" media="(device-width:320px)">
+	<link rel="apple-touch-startup-image" href="startup-iphone-retina-portrait.png" media="(device-width:320px) and (-webkit-min-device-pixel-ratio: 2)">
+	<link rel="apple-touch-startup-image" href="startup-iphone-5-portrait.png" media="(device-width:320px) and (device-height:568px) and (-webkit-min-device-pixel-ratio: 2)">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" /> 
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />   
+  	<!-- End for apple -->  
+ 
+    <!-- Add to Home Screen -->
+    <!--
+	<link rel="stylesheet" href="css/add2home.css">
+	<script type="application/javascript" src="js/add2home.js" charset="utf-8"></script>    
+    <!-- End Add to Home Screen -->    
+	<link rel="stylesheet" type="text/css" href="css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="css/index.css?v2" />
+    <link rel="stylesheet" type="text/css" href="css/slide.css"/>
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+
+	</head>
+        
+    <!--判斷是否為手機，若否，Go to Web Page 
+
+	<script type="text/javascript">
+    <!--
+    function mymedia(){ //裝置解析度取得與判斷
+    var myscreen=screen.availWidth; //取得可瀏覽頁面寬度
+    //document.write('Welcome...<br>'+myscreen);
+    //判斷是否為手機版頁面
+    if (myscreen>500){document.location.href="../mommy-web/index.html";return;}
+    
+    }
+    
+    mymedia();//呼叫函數
+    function MM_swapImgRestore() { //v3.0
+      var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+    }
+    function MM_preloadImages() { //v3.0
+      var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+        var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+        if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+    }
+
+	function MM_findObj(n, d) { //v4.01
+	  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+		d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+	  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+	  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+	  if(!x && d.getElementById) x=d.getElementById(n); return x;
+	}
+
+	function MM_swapImage() { //v3.0
+	  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+	   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+	}
+
+	</script> //--> 
+	
+	<body>
+		<div>
+			<div class="page page-1-1 page-current">
+               <div class="wrap"> 
+					<img class="up moveIconUp" src="img/icon_up.png" />
+					<img class="dot hide dot-scaleUpt" src="img/dot1.png" />
+					<img class="img1 animated fadeIn1" src="img/p1-earth.png" />
+					<img class="img2 animated slideInUp" src="img/p1-man.png" />
+					<img class="img3 animated bounceIn1 infinite" src="img/p1-fb.png" />
+					<img class="img4 animated bounceIn2 infinite" src="img/p1-line.png" />
+					<img class="img5 animated bounceIn3 infinite" src="img/p1-pin.png" />
+					<p class="text1 animated fadeIn2">數碼數位股份有限公司</p>
+               </div>
+			</div>
+			<div class="page page-1-2 hide">
+               <div class="wrap"> 
+                    <img class="dot hide dot-flipInLeft" src="img/dot2.png" />
+					<img class="up moveIconUp" src="img/icon_up.png" />	
+					<img class="qr fadeIn1" src="img/qr.png"/>
+				    <p class="img1-1 animated fadeIn1">Digital＋數碼數位<br>02-27261680#71<br>台北市信義區松德路171號6樓</p>
+                    <img class="img1-3 animated fadeIn1" src="img/p1-2-4.png">
+
+               </div>
+			</div>
+			<div class="page page-2-1 hide">
+				<div class="wrap">
+					<img class="up moveIconUp" src="img/icon_up.png" />
+					<img class="li animated flash infinite" src="img/li.png" />
+					<img class="img1 animated bounceInLeft3" src="img/p2-word1.png" />
+					<img class="img2 animated bounceInLeft4" src="img/p2-word2.png" />
+					<img class="img3 animated bounceInUp" src="img/p2-man.png" />
+					<img class="img4 animated fadeIn4" src="img/p2-t1.png" />
+					<img class="img5 animated bounceInLeft1" src="img/p2-t2.png" />
+					<img class="img6 animated bounceInLeft2" src="img/p2-t3.png" />
+				</div>
+			</div>
+			<div class="page page-3-1 hide">
+				<div class="wrap">
+					<img class="up animated moveIconUp" src="img/icon_up.png" />	
+					<img class="line animated slideInDown" src="img/line.png" />
+					<p class="img1 animated fadeIn2">每個人的行動自媒體</p>
+					<img class="img2 animated bounceInLeft1" src="img/p3-word1.png" />
+					<img class="img3 animated bounceInLeft2" src="img/p3-word2.png" />
+					<img class="img4 animated fadeIn2" src="img/p3-pic.png" />
+					<img class="img5 animated pulse infinite" src="img/p3-iapp.png" />
+					<img class="img6 animated pulse infinite" src="img/p3-imag.png" />
+					<img class="img7 animated pulse infinite" src="img/p3-mg.png" />
+					<img class="img8 animated pulse infinite" src="img/p3-nat.png" />
+					<img class="img9 animated pulse infinite" src="img/p3-o2o.png" />
+					<img class="img10 animated pulse infinite" src="img/p3-web.png" />
+					<img class="img11 animated fadeIn2" src="img/p3-word3.png" />
+				</div>
+			</div>
+
+			<div class="page page-4-1 hide">
+				<div class="wrap">
+					<img class="up animated moveIconUp" src="img/icon_up.png" />	
+					<img class="line animated slideInDown" src="img/line.png" />
+					<img class="img1 animated bounceInLeft1" src="img/p4-word1.png" />
+					<img class="img2 animated bounceInLeft2" src="img/p4-word2.png" />
+					<p class="img3 animated fadeIn2">最隨身輕鬆的閱讀方式</p>
+					<img class="img4 animated bounceInLeft3" src="img/p4-ph.png" />
+					<img class="img5 animated fadeIn3" src="img/p4-t2.png" />
+					<img class="img6 animated fadeIn3" src="img/p4-t3.png" />
+					<img class="wow animated fadeIn5 infinite " src="img/p4-pic3.jpg" />
+				</div>
+			</div>
+			
+			<div class="page page-5-1 hide">
+				<div class="wrap">
+					<img class="up animated moveIconUp" src="img/icon_up.png" />	
+                		<img class="line animated slideInDown" src="img/line.png" />
+                		<img class="img1 animated bounceInLeft1" src="img/p5-word1.png" />
+                		<img class="img2 animated bounceInLeft2" src="img/p5-word2.png" />
+                		<p class="img3 animated fadeIn2">像積木般簡易的打造自己的iApp</p>
+                		<img class="img4 animated fadeIn5 infinite" src="img/p5-t2.png" />
+                		<img class="img5 animated fadeIn2" src="img/p5-t3.png" />
+				</div>
+			</div>
+			
+			<div class="page page-6-1 hide">
+				<div class="wrap">
+					<img class="up animated moveIconUp" src="img/icon_up.png" />
+					<img class="line animated slideInDown" src="img/line.png" />
+					<img class="img1 animated bounceInLeft1" src="img/p6-word1.png" />
+                		<img class="img2 animated bounceInLeft2" src="img/p6-word2.png" />
+                		<p class="img3 animated fadeIn2">你的手機就是你的商店</p>
+                		<img class="img4 animated pulse infinite" src="img/p6-t2.png" />
+                		<img class="img5 animated pulse infinite" src="img/p6-t3.png" />
+                		<img class="img6 animated pulse infinite" src="img/p6-t4.png" />
+                		<img class="img7 animated fadeIn2" src="img/p6-ph.png" />
+				</div>
+			</div>
+			
+			<div class="page page-7-1 hide">
+				<div class="wrap">              
+					<img class="up animated moveIconUp" src="img/icon_up.png" />	
+					<img class="line animated slideInDown" src="img/line.png" />
+					<img class="img1 animated bounceInLeft1" src="img/p7-word1.png" />
+                		<img class="img2 animated bounceInLeft2" src="img/p7-word2.png" />
+                		<p class="img3 animated fadeIn1">時時刻刻連結社群</p>
+                		<img class="img4 animated fadeIn1" src="img/p7-pic.png" />
+                		<img class="img5 animated zoomIn1 infinite" src="img/p7-t2.png" />
+                		<img class="img6 animated zoomIn2 infinite" src="img/p7-t3.png" />
+				</div>
+			</div>
+			
+            <div class="page page-8-1 hide">
+				<div class="wrap">
+
+					<img class="line animated slideInDown" src="img/line.png" />
+					<img class="up animated moveIconUp" src="img/icon_up.png" />	
+					<img class="img1 animated fadeIn" src="img/p8-map.png" />                
+                		<input type="button" id="opener" class="img2 animated bounce infinite" style="background-image:url(img/p8-mark.png);width:36px;height:60px;border:0;">
+                		<div id="dialog" title="Digital+">
+                			<iframe width="400" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src=http://maps.google.com.tw/maps?f=q&hl=zh-TW&geocode=&q=台北市信義區松德路171號&z=16&output=embed&t=>
+                			</iframe>
+                	</div>
+                    
+                	<p class="img3 animated fadeIn1">02-27261680#71<br> 台北市信義區松德路171號6樓</p>
+                    <div class="fb-like animated fadeIn2" data-href="https://www.facebook.com/digital012" data-width="200" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+                    <p class="img4 animated fadeIn2">歡迎各路好手加入~</p>
+				</div>
+			</div>  
+			
+			<div class="page page-9-1 hide">
+				<div class="wrap">
+				<img class="img1 animated fadeIn" src="img/p9-pic.png" />                
+				<img class="img01 animated fadeIn" src="img/p9-01.png" />
+				<img class="img02 animated slideInDown" src="img/p9-02.png" />                
+				<img class="img5 animated pulse infinite" src="img/p9-101.png" />
+				</div>
+			</div>
+		</div>	
+		
+		<script src="js/zepto.min.js"></script>
+		<script src="js/touch.js"></script>
+		<script src="js/index.js?v2"></script>
+		
+		<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+
+<script>
+  $(function() {
+    $( "#dialog" ).dialog({
+      autoOpen: false,
+      show: {
+        effect: "blind",
+        duration: 1000
+      },
+      hide: {
+        effect: "explode",
+        duration: 1000
+      }
+    });
+ 
+    $( "#opener" ).click(function() {
+      $( "#dialog" ).dialog( "open" );
+    });
+  });
+</script>
+
+<!-- facebook 按讚 -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.3";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<!-- Google Analytics 分析 -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-62535634-2', 'auto');
+  ga('send', 'pageview');
+</script>
+	</body>
+</html>
