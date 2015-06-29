@@ -15,7 +15,7 @@ $('.wrap').css('-webkit-transform','scale('+s+','+s+') translate(0px,-'+ss+'px)'
 //監聽手勢，滑鼠，滾輪，鍵盤
 document.addEventListener('touchmove',function(event){ event.preventDefault(); },false);
 
-document.addEventListener('mousemove',function(event){ event.preventDefault(); },false);
+//document.addEventListener('mouseup',function(event){ event.preventDefault(); },false);
 
 document.addEventListener('keyup',function(event){ event.preventDefault(); },false);
 
@@ -26,9 +26,9 @@ $(document).swipeUp(function(){
 	if (isAnimating) return;
 	last.row = now.row;
 	last.col = now.col;
-	if (last.row != maxPage) { now.row = last.row+1; now.col = 1; pageMove(towards.up);}	
+	if (last.row != maxPage) { now.row = last.row+1; now.col = 1; pageMove(towards.up);}
 	//判斷最後一頁跳至第一頁
-	if (last.row == maxPage) { now.row = 1; now.col = 1; pageMove(towards.up);}
+	if (last.row == maxPage) { now.row = 1; now.col = 1; pageMove(towards.up);}	
 })
 
 $(document).keyup(function(){
@@ -36,16 +36,17 @@ if (isAnimating) return;
 	last.row = now.row;
 	last.col = now.col;
 	if (last.row != maxPage) { now.row = last.row+1; now.col = 1; pageMove(towards.up);}
+	//判斷keyboard最後一頁跳至第一頁	
 	if (last.row == maxPage) { now.row = 1; now.col = 1; pageMove(towards.up);}	
 })
 
-$(document).mouseup(function(){
-if (isAnimating) return;
-	last.row = now.row;
-	last.col = now.col;
-	if (last.row != maxPage) { now.row = last.row+1; now.col = 1; pageMove(towards.up);}	
-	if (last.row == maxPage) { now.row = 1; now.col = 1; pageMove(towards.up);}
-})	
+//$(document).mouseup(function(){
+//if (isAnimating) return;
+//	last.row = now.row;
+//	last.col = now.col;
+//	if (last.row != maxPage) { now.row = last.row+1; now.col = 1; pageMove(towards.up);}	
+//	if (last.row == maxPage) { now.row = 1; now.col = 1; pageMove(towards.up);}
+//})
 //$(document).scrollup(function(){
 //if (isAnimating) return;
 //	last.row = now.row;
@@ -57,8 +58,9 @@ $(document).swipeDown(function(){
 	if (isAnimating) return;
 	last.row = now.row;
 	last.col = now.col;
-	if (last.row!=1) { now.row = last.row-1; now.col = 1; pageMove(towards.down);}
-	if (last.row == 1) { now.row = maxPage; now.col = 1; pageMove(towards.up);}	
+	if (last.row!=1) { now.row = last.row-1; now.col = 1; pageMove(towards.down);}	
+	//判斷第一頁跳至最後一頁
+	if (last.row == 1) { now.row = maxPage; now.col = 1; pageMove(towards.down);}	
 })
 
 $(document).swipeLeft(function(){

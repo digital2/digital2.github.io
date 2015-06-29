@@ -76,6 +76,12 @@
 	</script> //--> 
 	
 	<body>
+    <div id="divLoading" 
+    style="border:3px blue solid;background-color:#ba2a4a;color:white;position:absolute;top:-50px;left:350px;width:250px;height:50px;z-order=0">
+  <img src="img/loading-gif.gif"
+       style="vertical-align:middle;padding:6px"/>
+  網頁載入中，請稍候...
+</div>
 		<div>
 			<div class="page page-1-1 page-current">
                <div class="wrap"> 
@@ -217,6 +223,19 @@
 		<script src="//code.jquery.com/jquery-1.10.2.js"></script>
         <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 
+<script>
+  function init( ) {
+    // .... 其他指令
+    _oTag = document.getElementById("divLoading");
+    _oTag.style.display = "none";  // hide it.
+  }
+
+  if (window.attachEvent) {
+    window.attachEvent('onload', init);
+  } else {
+    window.addEventListener('load', init, false);
+  }
+</script>
 
 <script>
   $(function() {
