@@ -35,7 +35,7 @@
     <link rel="stylesheet" type="text/css" href="css/slide.css"/>
     <link rel="stylesheet" href="/resources/demos/style.css">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
-    <link rel="stylesheet" href="css/fakeLoader.css">   
+
 	</head>
         
     <!--判斷是否為手機，若否，Go to Web Page 
@@ -76,8 +76,12 @@
 	</script> //--> 
 	
 	<body>
-   	 <div class="fakeloader"></div>
-     
+    <div id="divLoading" 
+    style="border:3px blue solid;background-color:#ba2a4a;color:white;position:absolute;top:-50px;left:350px;width:250px;height:50px;z-order=0">
+  <img src="img/loading-gif.gif"
+       style="vertical-align:middle;padding:6px"/>
+  網頁載入中，請稍候...
+</div>
 		<div>
 			<div class="page page-1-1 page-current">
                <div class="wrap"> 
@@ -271,19 +275,6 @@
 
   ga('create', 'UA-62535634-2', 'auto');
   ga('send', 'pageview');
-</script>
-
-<script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
-<script src="js/fakeLoader.min.js"></script>
-
-<script type="text/javascript">
-$(document).ready(function(){
-    $(".fakeloader").fakeLoader({
-        timeToHide:1200,
-        bgColor:"#666666",
-        spinner:"spinner2"
-    });
-});
 </script>
 	</body>
 </html>
