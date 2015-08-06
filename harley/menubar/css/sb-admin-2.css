@@ -5,6 +5,9 @@
  */
 *{
     box-sizing: border-box;
+    font-family: 'Myriad Pro','Microsoft JhengHei','sans-serif';
+
+   
 }
 body {
     background-color: #f8f8f8;
@@ -169,13 +172,7 @@ body {
     color: #d9534f;
 }
 
-.btn-primary.btn-outline:hover,
-.btn-success.btn-outline:hover,
-.btn-info.btn-outline:hover,
-.btn-warning.btn-outline:hover,
-.btn-danger.btn-outline:hover {
-    color: #fff;
-}
+
 
 .chat {
     margin: 0;
@@ -432,6 +429,77 @@ table.dataTable thead .sorting:after {
   border-radius: 0 4px 4px 0;
 }
 
+/*我的外觀控制*/
+
+.nav li a {
+    display: block;
+    background-color: #505050;
+    color: #fff;
+    border-radius: 10px 0 0 0 / 10px 0 0 0;
+    font-size: 24px;
+    padding: 10px 0;
+    font-weight: bold;
+}
+.nav>li>a:focus, .nav>li>a:hover {
+    background-color: #505050;
+}
+/*.nav:hover li a {
+    background-color: #505050; 
+}
+*/
+.borline {
+    border-radius: 15px 0 0 0 / 15px 0 0 0;
+    border-style: solid ;
+    border-width: 3px;
+    border-color: #505050;
+}
+.nav-second-level .Memberline {
+    width: 100%;
+    border-bottom: 2px solid #505050;
+    font-size: 24px;
+    color: #959595;
+    /*font-weight: bolder;*/
+    padding: 0 0 35px 0;
+    margin: 0;
+    position: relative;    
+}
+.nav-second-level .Memberline div:first-child {
+    padding-top: 20px;
+}
+.nav-second-level .Memberline #fName{
+    padding: 0;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+.center {
+    width: 98%;
+    height: 200px;
+    margin: 0 auto;
+    position: relative;
+}
+.center label {
+    padding: 0;
+    height: 25px;
+    margin: 0;
+}
+.center p {
+    padding-top: 10px;
+}
+.center .membercenter {
+    /*outline: 1px solid #f00;*/
+    padding: 0;
+    height: 45px;
+}
+.Sub {
+    /*outline: 1px solid #f00;*/
+    width: 100%;
+    height: 80px;
+    top: 110px;
+
+}
+.smallSub {
+    direction: rtl;
+}
 img {
     width: 100%;
 }
