@@ -31,6 +31,7 @@ $(document).swipeUp(function(){
 	if (last.row == maxPage) { now.row = 1; now.col = 1; pageMove(towards.up);}	
 })
 
+// 鍵盤控制相關的
 $(document).keyup(function(){
 if (isAnimating) return;
 	last.row = now.row;
